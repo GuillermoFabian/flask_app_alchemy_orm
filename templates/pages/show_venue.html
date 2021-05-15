@@ -1,11 +1,27 @@
 {% extends 'layouts/main.html' %}
 {% block title %}Venue Search{% endblock %}
 {% block content %}
-<div class="row">
+<div class="row" xmlns="http://www.w3.org/1999/html">
 	<div class="col-sm-6">
 		<h1 class="monospace">
 			{{ venue.name }}
-		</h1>
+        </h1>
+    <h4>
+           <form>
+            <a class="edit_profile"
+               href="{{ url_for("edit_venue", venue_id=venue.id) }}">
+                <i class="fas fa-pen"></i>
+                <span>Edit </span>
+            </a>
+
+    <input type="submit"
+            value="Delete Venue"
+            class="btn btn-primary btn-lg btn-block"
+            formmethod="post"
+            formaction="{{ url_for('delete_venue', venue_id=venue.id) }}">
+</form>
+
+		</h4>
 		<p class="subtitle">
 			ID: {{ venue.id }}
 		</p>
@@ -77,5 +93,17 @@
 
 <a href="/venues/{{ venue.id }}/edit"><button class="btn btn-primary btn-lg">Edit</button></a>
 
+{% endblock %}
+
+{% block script %}
+    <script>
+          const deleteBtn = document.getElementById('delete-venue')
+  deleteBtn.onclick = function(e) {
+    const venueId = e.target.dataset['id']
+    fetch('/venues/' + venueId, {
+      method: 'DELETE'
+    })
+  }
+    </script>
 {% endblock %}
 

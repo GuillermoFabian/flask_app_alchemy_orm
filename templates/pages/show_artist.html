@@ -6,6 +6,19 @@
 		<h1 class="monospace">
 			{{ artist.name }}
 		</h1>
+    <h4>
+            <a class="edit_profile"
+               href="{{ url_for("edit_artist", artist_id=artist.id) }}">
+                <i class="fas fa-pen"></i>
+                <span>Edit </span>
+            </a>
+            <a class="delete_profile"
+               href="{{ url_for("delete_artist", artist_id=artist.id) }}">
+                <i class="fas fa-trash"></i>
+                <span> Delete</span>
+            </a>
+
+		</h4>
 		<p class="subtitle">
 			ID: {{ artist.id }}
 		</p>
