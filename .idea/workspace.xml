@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7dfc8f3-a0bf-4e0a-912b-c0274dac9357" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/models.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
-      <change beforePath="$PROJECT_DIR$/forms.py" afterPath="$PROJECT_DIR$/forms.py" />
-      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" afterPath="$PROJECT_DIR$/migrations/alembic.ini" />
-      <change beforePath="$PROJECT_DIR$/migrations/env.py" afterPath="$PROJECT_DIR$/migrations/env.py" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/03d7ffd5d64e_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/0b3385b7216a_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/1ff7e13257d0_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/23f3f39fcbd4_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/3be1e9fc15ae_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/51b5348a57f9_migracion_inicial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/60e80601c5c6_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/814f54626455_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/9029ac412f7f_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/venues.html" afterPath="$PROJECT_DIR$/templates/pages/venues.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,8 +39,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="240" column="9" lean-forward="false" selection-start-line="240" selection-start-column="9" selection-end-line="240" selection-end-column="9" />
+            <state relative-caret-position="26">
+              <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,8 +99,8 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/migrations/versions/50c8fef1fbda_.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -567,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="240" column="9" lean-forward="false" selection-start-line="240" selection-start-column="9" selection-end-line="240" selection-end-column="9" />
+        <state relative-caret-position="26">
+          <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding />
         </state>
       </provider>

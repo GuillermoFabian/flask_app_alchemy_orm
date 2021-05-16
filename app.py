@@ -145,60 +145,6 @@ def show_venue(venue_id):
   data['past_shows_count'] = len(past_shows)
   data['upcoming_shows_count'] = len(upcoming_shows)
   return render_template('pages/show_venue.html', venue=data )
-'''          
-
-  venue = Venue.query.get(venue_id)
-  venue_shows = Show.query.filter_by(venue_id=venue_id).all()
-  ## Get future shows:
-  def upcoming_shows():
-      upcoming_shows = []
-      if venue_shows is not None:
-          for show in venue_shows:
-              if show.start_date > datetime.now():
-                  upcoming_shows.append({
-                      "artist_id": show.artist_id,
-                      "artist_name": show.artist.name,
-                      "artist_image_link": show.artist.image_link,
-                      "start_time": format_datetime(str(show.start_date))
-                  })
-      return upcoming_shows
-
-  ## Get past shows:
-  def past_shows():
-      past_shows = []
-      if venue_shows is not None:
-          for show in venue_shows:
-              if show.start_date <= datetime.now():
-                  past_shows.append({
-                      "artist_id": show.artist_id,
-                      "artist_name": show.artist.name,
-                      "artist_image_link": show.artist.image_link,
-                      "start_time": format_datetime(str(show.start_date))
-                  })
-      return past_shows
-
-
-  data = {
-      'id': venue.id,
-      'name': venue.name,
-      'genres': venue.genres,
-      'city': venue.city,
-      'state': venue.state,
-      "phone": venue.phone,
-      "website": venue.website,
-      "facebook_link": venue.facebook_link,
-      "seeking_talent": venue.seeking_talent,
-      "seeking_description": venue.seeking_description,
-      "image_link": venue.image_link,
-      "past_shows": past_shows(),
-      "past_shows_count": len(past_shows()),
-      'upcoming_shows': upcoming_shows(),
-      'upcoming_shows_count': len(upcoming_shows())}
-
-'''
-
-
-
 
 #  Create Venue
 #  ----------------------------------------------------------------
